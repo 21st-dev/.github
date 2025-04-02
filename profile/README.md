@@ -2,7 +2,7 @@
 
 We build easy-to-use tools to help you quickly create great-looking UI components with AI
 
-- **Magic**: An AI tool in your IDE that creates UI instantly
+- **Magic MCP**: An AI tool in your IDE that creates UI instantly
 - **Component Library**: Ready-to-use UI components designed by pros
 
 ### Join our community
