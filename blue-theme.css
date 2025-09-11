@@ -1,0 +1,275 @@
+/* Blue Theme - Color Palette and Components */
+
+:root {
+  /* Blue Color Palette */
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --blue-800: #1e40af;
+  --blue-900: #1e3a8a;
+  --blue-950: #172554;
+
+  /* Semantic Blue Variables */
+  --primary-blue: var(--blue-600);
+  --primary-blue-hover: var(--blue-700);
+  --primary-blue-light: var(--blue-100);
+  --primary-blue-dark: var(--blue-800);
+  --blue-text: var(--blue-900);
+  --blue-text-light: var(--blue-700);
+  --blue-border: var(--blue-300);
+  --blue-bg: var(--blue-50);
+  --blue-bg-hover: var(--blue-100);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: var(--blue-text);
+  background-color: #ffffff;
+}
+
+/* Blue Button Component */
+.btn-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-blue:hover {
+  background-color: var(--primary-blue-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-blue:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-blue:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Blue Button Variants */
+.btn-blue-outline {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.btn-blue-outline:hover {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.btn-blue-ghost {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: none;
+}
+
+.btn-blue-ghost:hover {
+  background-color: var(--primary-blue-light);
+}
+
+.btn-blue-soft {
+  background-color: var(--primary-blue-light);
+  color: var(--primary-blue);
+}
+
+.btn-blue-soft:hover {
+  background-color: var(--blue-200);
+}
+
+/* Blue Card Component */
+.card-blue {
+  background-color: white;
+  border: 1px solid var(--blue-border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-blue:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.card-blue-header {
+  background-color: var(--blue-bg);
+  border-radius: 12px 12px 0 0;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--blue-border);
+  margin: -24px -24px 24px -24px;
+}
+
+.card-blue-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-text);
+  margin-bottom: 4px;
+}
+
+.card-blue-subtitle {
+  font-size: 14px;
+  color: var(--blue-text-light);
+}
+
+.card-blue-content {
+  color: var(--blue-text);
+}
+
+.card-blue-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--blue-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Blue Badge Component */
+.badge-blue {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: var(--primary-blue-light);
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Blue Alert Component */
+.alert-blue {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--blue-bg);
+  border: 1px solid var(--blue-border);
+  color: var(--blue-text);
+  margin: 16px 0;
+}
+
+.alert-blue-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+/* Blue Input Component */
+.input-blue {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--blue-border);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  color: var(--blue-text);
+}
+
+.input-blue:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input-blue::placeholder {
+  color: var(--blue-400);
+}
+
+/* Blue Navigation */
+.nav-blue {
+  background-color: var(--primary-blue);
+  padding: 16px 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-blue-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-blue-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-blue-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-blue-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-blue-link:hover {
+  color: white;
+}
+
+/* Utility Classes */
+.text-blue { color: var(--primary-blue); }
+.text-blue-light { color: var(--blue-text-light); }
+.bg-blue { background-color: var(--primary-blue); }
+.bg-blue-light { background-color: var(--blue-bg); }
+.border-blue { border-color: var(--blue-border); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-blue {
+    padding: 16px;
+  }
+  
+  .card-blue-header {
+    margin: -16px -16px 16px -16px;
+    padding: 12px 16px;
+  }
+  
+  .nav-blue-container {
+    padding: 0 16px;
+  }
+  
+  .nav-blue-links {
+    gap: 16px;
+  }
+}

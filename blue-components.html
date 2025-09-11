@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Theme Components - 21st.dev</title>
+  <link rel="stylesheet" href="blue-theme.css">
+  <style>
+    /* Demo page specific styles */
+    .demo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    
+    .demo-section {
+      margin: 48px 0;
+    }
+    
+    .demo-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--blue-border);
+      padding-bottom: 8px;
+    }
+    
+    .demo-section h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--blue-text);
+      margin: 24px 0 12px 0;
+    }
+    
+    .component-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin: 24px 0;
+    }
+    
+    .component-showcase {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 16px 0;
+      align-items: center;
+    }
+    
+    .hero-section {
+      text-align: center;
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--blue-50) 0%, var(--blue-100) 100%);
+      border-radius: 16px;
+      margin-bottom: 48px;
+    }
+    
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--primary-blue);
+      margin-bottom: 16px;
+    }
+    
+    .hero-subtitle {
+      font-size: 20px;
+      color: var(--blue-text-light);
+      margin-bottom: 32px;
+    }
+    
+    .form-demo {
+      max-width: 400px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-label {
+      display: block;
+      font-weight: 600;
+      color: var(--blue-text);
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-blue">
+    <div class="nav-blue-container">
+      <a href="#" class="nav-blue-brand">21st.dev</a>
+      <ul class="nav-blue-links">
+        <li><a href="#" class="nav-blue-link">Components</a></li>
+        <li><a href="#" class="nav-blue-link">Tools</a></li>
+        <li><a href="#" class="nav-blue-link">Docs</a></li>
+        <li><a href="#" class="nav-blue-link">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="demo-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1 class="hero-title">Blue Theme Components</h1>
+      <p class="hero-subtitle">Beautiful, ready-to-use UI components with a stunning blue theme</p>
+      <div class="component-showcase">
+        <button class="btn-blue">Get Started</button>
+        <button class="btn-blue-outline">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="demo-section">
+      <h2>🔘 Blue Buttons</h2>
+      <p>Various button styles with hover effects and focus states.</p>
+      
+      <h3>Primary Buttons</h3>
+      <div class="component-showcase">
+        <button class="btn-blue">Primary Button</button>
+        <button class="btn-blue-outline">Outline Button</button>
+        <button class="btn-blue-ghost">Ghost Button</button>
+        <button class="btn-blue-soft">Soft Button</button>
+      </div>
+
+      <h3>Interactive States</h3>
+      <div class="component-showcase">
+        <button class="btn-blue">Hover me!</button>
+        <button class="btn-blue" disabled style="opacity: 0.5;">Disabled</button>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="demo-section">
+      <h2>🃏 Blue Cards</h2>
+      <p>Elegant card components with hover animations.</p>
+      
+      <div class="component-grid">
+        <div class="card-blue">
+          <div class="card-blue-header">
+            <div class="card-blue-title">Magic MCP</div>
+            <div class="card-blue-subtitle">AI-powered UI generation</div>
+          </div>
+          <div class="card-blue-content">
+            <p>Create beautiful UI components instantly with AI assistance. Perfect for rapid prototyping and professional development.</p>
+          </div>
+          <div class="card-blue-footer">
+            <span class="badge-blue">Popular</span>
+            <button class="btn-blue-ghost">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card-blue">
+          <div class="card-blue-header">
+            <div class="card-blue-title">Component Library</div>
+            <div class="card-blue-subtitle">Ready-to-use components</div>
+          </div>
+          <div class="card-blue-content">
+            <p>Access a comprehensive library of professionally designed UI components that work seamlessly together.</p>
+          </div>
+          <div class="card-blue-footer">
+            <span class="badge-blue">New</span>
+            <button class="btn-blue-ghost">Explore</button>
+          </div>
+        </div>
+
+        <div class="card-blue">
+          <div class="card-blue-title">Simple Card</div>
+          <div class="card-blue-content">
+            <p>This is a simple card without a header. Perfect for displaying content in a clean, organized way.</p>
+          </div>
+          <div class="card-blue-footer">
+            <button class="btn-blue-outline">Action</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forms Section -->
+    <div class="demo-section">
+      <h2>📝 Blue Forms</h2>
+      <p>Clean form inputs with focus states and validation styling.</p>
+      
+      <div class="component-grid">
+        <div class="form-demo">
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="input-blue" placeholder="Enter your email">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="input-blue" rows="4" placeholder="Your message here..."></textarea>
+          </div>
+          
+          <button class="btn-blue" style="width: 100%;">Send Message</button>
+        </div>
+
+        <div class="form-demo">
+          <div class="form-group">
+            <label class="form-label" for="username">Username</label>
+            <input type="text" id="username" class="input-blue" placeholder="Choose a username">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" id="password" class="input-blue" placeholder="Enter password">
+          </div>
+          
+          <div class="component-showcase">
+            <button class="btn-blue">Sign Up</button>
+            <button class="btn-blue-ghost">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alerts Section -->
+    <div class="demo-section">
+      <h2>⚠️ Blue Alerts</h2>
+      <p>Informational alerts and notifications.</p>
+      
+      <div class="alert-blue">
+        <span class="alert-blue-icon">ℹ️</span>
+        <strong>Info:</strong> This is an informational alert using the blue theme. Perfect for displaying helpful messages to users.
+      </div>
+
+      <div class="alert-blue">
+        <span class="alert-blue-icon">🎉</span>
+        <strong>Success:</strong> Your blue-themed components are ready to use! Check out all the interactive elements above.
+      </div>
+    </div>
+
+    <!-- Badges Section -->
+    <div class="demo-section">
+      <h2>🏷️ Blue Badges</h2>
+      <p>Small labels and status indicators.</p>
+      
+      <div class="component-showcase">
+        <span class="badge-blue">New</span>
+        <span class="badge-blue">Popular</span>
+        <span class="badge-blue">Featured</span>
+        <span class="badge-blue">Beta</span>
+        <span class="badge-blue">Pro</span>
+      </div>
+    </div>
+
+    <!-- Utilities Section -->
+    <div class="demo-section">
+      <h2>🎨 Blue Utilities</h2>
+      <p>Utility classes for quick styling.</p>
+      
+      <div class="component-grid">
+        <div class="card-blue">
+          <div class="card-blue-title">Text Utilities</div>
+          <div class="card-blue-content">
+            <p class="text-blue">This text uses the primary blue color.</p>
+            <p class="text-blue-light">This text uses the lighter blue color.</p>
+            <p>Regular text color for comparison.</p>
+          </div>
+        </div>
+
+        <div class="card-blue">
+          <div class="card-blue-title">Background Utilities</div>
+          <div class="card-blue-content">
+            <div class="bg-blue-light" style="padding: 16px; border-radius: 8px; margin: 8px 0;">
+              Light blue background
+            </div>
+            <div class="bg-blue text-white" style="padding: 16px; border-radius: 8px; margin: 8px 0;">
+              Primary blue background
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="demo-section" style="text-align: center; padding-top: 48px; border-top: 1px solid var(--blue-border);">
+      <p class="text-blue-light">Created with 21st.dev • Beautiful UI in the era of AI coding</p>
+      <div class="component-showcase" style="justify-content: center; margin-top: 20px;">
+        <button class="btn-blue-outline">Join Discord</button>
+        <button class="btn-blue-outline">Follow on X</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Add some interactivity
+    document.querySelectorAll('.btn-blue, .btn-blue-outline, .btn-blue-ghost, .btn-blue-soft').forEach(button => {
+      button.addEventListener('click', function(e) {
+        // Create a ripple effect
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+        
+        ripple.style.cssText = `
+          position: absolute;
+          width: ${size}px;
+          height: ${size}px;
+          left: ${x}px;
+          top: ${y}px;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          transform: scale(0);
+          animation: ripple 0.6s ease-out;
+          pointer-events: none;
+        `;
+        
+        this.style.position = 'relative';
+        this.style.overflow = 'hidden';
+        this.appendChild(ripple);
+        
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+    
+    // Add CSS animation for ripple effect
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes ripple {
+        to {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
