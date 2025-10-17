@@ -1,4 +1,4 @@
-## 21st.dev – Better UI in the era of AI coding
+## 21st – the first tool for vibe crafting
 
 We build easy-to-use tools to help you quickly create great-looking UI components with AI
 
