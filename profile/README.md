@@ -10,6 +10,7 @@ We build tools for developers who ship fast and care about craft.
 | [**21st.dev**](https://github.com/serafimcloud/21st) | npm for design engineers — largest marketplace of shadcn/ui components, blocks and hooks | ![GitHub stars](https://img.shields.io/github/stars/serafimcloud/21st?style=flat&color=yellow) |
 | [**Magic MCP**](https://github.com/21st-dev/magic-mcp) | MCP server for AI-powered frontend development in Cursor, Windsurf, and Cline | ![GitHub stars](https://img.shields.io/github/stars/21st-dev/magic-mcp?style=flat&color=yellow) |
 | [**21st SDK**](https://21st.dev/agents) | The fastest way to add an AI agent to your app — runtimes, sandboxed execution, streaming, drop-in React components | ![GitHub stars](https://img.shields.io/github/stars/21st-dev/an-sdk?style=flat&color=yellow) |
+| [**Agent Elements**](https://github.com/21st-dev/agent-elements) | Production-ready React components for chat, tools, and AI workflows — a shadcn-style registry of agent UI primitives | ![GitHub stars](https://img.shields.io/github/stars/21st-dev/agent-elements?style=flat&color=yellow) |
 
 ### Links
 
